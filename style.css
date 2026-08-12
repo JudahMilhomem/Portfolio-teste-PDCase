@@ -1,0 +1,98 @@
+/* --- Declarações globais --- */
+/* --- RESET --- */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+
+:root {
+    --dark-grey: #181A1B;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+    font-size: 1.6rem;
+
+    min-height: 100vh;
+}
+
+
+
+/* --- CABEÇALHO --- */
+header {
+    background-color: rgb(42, 97, 199);
+    height: 200px;
+}
+
+.circular {
+    border-radius: 1000px;
+}
+
+#profile-picture {
+    width: 250px;
+    height: 250px;
+}
+
+.contact-and-location {
+    flex-direction: column;
+}
+
+
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+.flex-container {
+    display: flex;
+}
+
+/* --- TEXTO --- */
+h1 {
+    font-size: 1.6rem;
+}
+
+/* --- Outros elementos --- */
+/* - Botões, Links, etc. - */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* --- SESSÕES --- */
+/* - CARDS DE INFORMAÇÃO - */
+.navigation {
+    background-color: yellow;
+    width: 30%;
+}
+
+#main-info-section {
+    background-color: green;
+    width: 70%;
+
+    flex-direction: column;
+}
+
+.info-card {
+    border: black 1px solid;
+}
+/* ------------------------- */
+
+
+
+/* --- RODAPÉ --- */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(27, 27, 83);
+    width: 100%;
+    height: 100px;
+}
