@@ -47,15 +47,17 @@ body {
 /* --- CABEÇALHO --- */
 header {
     background-color: var(--medium-grey);
-    height: 250px;
+    min-height: 30rem;
 
     align-items: center;
     justify-content: space-between;
 
-    padding: 2.5rem 5%;
+    padding: 4rem 5%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .circular {
+    position: relative;
     border-radius: 50%;
 }
 
@@ -64,6 +66,7 @@ header {
     height: 200px;
     object-fit: cover;
     border: 3px solid var(--green);
+    /* outline: 0.5rem solid var(--green); */
 }
 
 figcaption {
@@ -72,7 +75,7 @@ figcaption {
 
 .personal-info {
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .name-and-role {
@@ -81,12 +84,19 @@ figcaption {
 }
 
 .full-name {
+    margin: 0.5rem 0;
     font-size: 4rem;
     font-weight: 700;
+
+    background: linear-gradient(90deg, var(--light-text), var(--green));
+    background-clip: text;
+    /* -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .role {
-    color: var(--green);
+    color: var(--purple);
 
     font-size: 2rem;
     font-weight: 500;
@@ -155,7 +165,43 @@ a:hover {
 /* - CARDS DE INFORMAÇÃO - */
 .navigation {
     background-color: var(--medium-grey);
-    width: 30%;
+    width: 24rem;
+
+    flex-shrink: 0;
+    position: sticky;
+    top: 3rem;
+}
+
+.side-menu {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1.2rem;
+    background-color: var(--medium-grey);
+    box-shadow: var(--shadow);
+}
+
+.side-menu ul {
+    flex-direction: column;
+
+    list-style: none;
+}
+
+.nav-option a {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0;
+    color: var(--accent-text);
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.nav-option:last-child a {
+    border-bottom: none;
+}
+
+.nav-option a:hover {
+    padding-left: 0.8rem;
+    color: var(--green);
 }
 
 #main-info-section {
@@ -166,23 +212,40 @@ a:hover {
     gap: 2rem;
 }
 
+.info-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.3rem;
+    height: 100%;
+    background: linear-gradient(var(--green), var(--purple));
+}
+
 .info-card {
+    position: relative;
+
     background: var(--medium-grey);
     backdrop-filter: 1rem;
 
-    border: black 1px solid;
-    border-radius: 0.8rem;
-    box-shadow: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 1.2rem;
+    box-shadow: var(--shadow);
 
-    padding: 3.2rem;
+    padding: 4rem;
+    overflow: hidden;
 }
 
 .info-card p {
     color: var(--accent-text);
+    margin-bottom: 1.5rem;
 }
 
 .info-card h2 {
     color: var(--light-text);
+    margin: 0.5rem 0 2rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
 }
 /* ------------------------- */
 
