@@ -9,10 +9,20 @@
 :root {
     /* general */
     --dark-grey: #181A1B;
+    --medium-grey: #1B2024;
+    --light-grey: #242A2F;
+    --green: #62E6A7;
+    --purple: #9B6CFF;
+    --border-color: #2C3338;
 
     /* text */
     --dark-text: black;
     --light-text: white;
+    --accent-text: #A6ADB3;
+
+    /* effects */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        /* h | v | b | o */
 }
 
 html {
@@ -21,7 +31,9 @@ html {
 }
 
 body {
-    background-color: grey;
+    background-color: var(--dark-grey);
+    color: var(--light-text);
+
     font-size: 1.6rem;
     font-family: "Elms Sans", sans-serif;
     font-optical-sizing: auto;
@@ -34,21 +46,81 @@ body {
 
 /* --- CABEÇALHO --- */
 header {
-    background-color: rgb(42, 97, 199);
-    height: 200px;
+    background-color: var(--medium-grey);
+    height: 250px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2.5rem 5%;
 }
 
 .circular {
-    border-radius: 1000px;
+    border-radius: 50%;
 }
 
 #profile-picture {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--green);
+}
+
+figcaption {
+    display: none;
+}
+
+.personal-info {
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.name-and-role {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.full-name {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.role {
+    color: var(--green);
+
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .contact-and-location {
     flex-direction: column;
+
+    align-items: flex-end;
+    gap: 1rem;
+
+    text-align: right;
+}
+
+.contact-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.8rem;
+}
+
+.contact-list a figure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.contact-list a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact-list a:hover {
+    color: var(--green);
 }
 
 
@@ -67,7 +139,7 @@ h1 {
 /* - Botões, Links, etc. - */
 a {
     text-decoration: none;
-    color: initial;
+    color: var(--accent-text);
 }
 
 a:hover {
@@ -82,7 +154,7 @@ a:hover {
 
 /* - CARDS DE INFORMAÇÃO - */
 .navigation {
-    background-color: white;
+    background-color: var(--medium-grey);
     width: 30%;
 }
 
@@ -91,22 +163,26 @@ a:hover {
     width: 70%;
 
     flex-direction: column;
+    gap: 2rem;
 }
 
 .info-card {
+    background: var(--medium-grey);
+    backdrop-filter: 1rem;
+
     border: black 1px solid;
     border-radius: 0.8rem;
     box-shadow: 1;
-}
 
-.info-card {
-    background: transparent;
-    backdrop-filter: 1rem;
     padding: 3.2rem;
 }
 
-.info-card p, .info-card h2 {
-    color: var(--dark-text);
+.info-card p {
+    color: var(--accent-text);
+}
+
+.info-card h2 {
+    color: var(--light-text);
 }
 /* ------------------------- */
 

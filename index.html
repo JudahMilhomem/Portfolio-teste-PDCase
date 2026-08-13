@@ -21,12 +21,14 @@
         <section class="flex-container left-side personal-info">
             <!-- Imagem -->
             <figure>
-                <img class="circular" id="profile-picture" src="./public/images/Knight.jpg" alt="Foto de perfil profissional em formato circular">
-                <figcaption>Imagem placehoder temporária</figcaption>
+                <img class="circular" id="profile-picture" src="./public/images/Knight.jpg" alt="Foto de perfil profissional de Judah Milhomem em formato circular">
+                <figcaption><small>Imagem placehoder temporária</small></figcaption>
             </figure>
             <!-- Informações pessoais -->
-            <h1 class="info full-name">Judah Milhomem Alencar Barros</h1>
-            <h2 class="info role"><i>Front-End Developer</i></h2>
+             <section class="flex-container name-and-role">
+                <h1 class="info full-name">Judah Milhomem Alencar Barros</h1>
+                <h2 class="info role"><i>Front-End Developer</i></h2>
+             </section>
         </section>
 
         <!-- Lado direito -->
@@ -35,11 +37,20 @@
             <address>Rua Cunha Porã, 868-E - Chapecó</address>
             <!-- Informações de Contato -->
             <h3>Contato:</h3>
-            <figure><img src="" alt="Ícone do WhatsApp"></figure>
-            <figure>
-                <img src="" alt="Ícone de e-mail">
-                <a href="">judahmilhomem2001@gmail.com</a>
-            </figure>
+            <section class="flex-container contact-list">
+                <a class="flex-container" href="">
+                    <figure>
+                        <img src="./public/svg/wpp.svg" alt="Ícone do WhatsApp">
+                        (49) 99172-2510
+                    </figure>
+                </a>
+                <a class="flex-container" href="mailto:judahmilhomem2001@gmail.com">
+                    <figure>
+                        <img src="./public/svg/mail.svg" alt="Ícone de e-mail">
+                        judahmilhomem2001@gmail.com
+                    </figure>
+                </a>
+            </section>
         </section>
     </header>
 
@@ -67,15 +78,11 @@
         <section class="flex-container" id="main-info-section">
             <!-- Sobre Mim -->
             <section class="info-card about-me" id="about-me">
-                <article>
-                    <h2>Sobre Mim</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.</p>
-                </article>
-            </section>
-            <!-- Formação -->
-            <section class="info-card graduation" id="graduation">
-                <h2>Formação</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.</p>
+                <span class="section-number">01</span>
+                <p class="section-label">SOBRE MIM</p>
+                <h2>Construindo experiências através da tecnologia.</h2>
+                <p>Olá! Meu nome é Judah Milhomem e, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quo.</p>
+                <p>Atualmente, venho aprofundando meus conhecimentos em Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
             </section>
     </main>
 
