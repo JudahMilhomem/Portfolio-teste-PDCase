@@ -1,0 +1,35 @@
+/* ---------- HABILIDADES ---------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.skill-card {
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    background-color: var(--background-secondary);
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    border-color: var(--green);
+    transform: translateY(-0.4rem);
+}
+
+.skill-number {
+    color: var(--purple);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.skill-card h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.skill-card p {
+    font-size: 1.4rem;
+}

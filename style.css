@@ -162,7 +162,8 @@ a:hover {
     text-transform: uppercase;
 }
 
-/* - CARDS DE INFORMAÇÃO - */
+/* -------------------- CARDS DE INFORMAÇÃO -------------------- */
+/* ---------- Estilização geral ---------- */
 .navigation {
     background-color: var(--medium-grey);
     width: 24rem;

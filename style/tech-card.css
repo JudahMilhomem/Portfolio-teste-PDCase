@@ -1,0 +1,50 @@
+/* ---------- TECNOLOGIAS ---------- */
+.technology-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 4rem;
+}
+
+.technology {
+    width: 100%;
+}
+
+.technology-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.technology-header h3 {
+    font-size: 1.5rem;
+}
+
+.technology-header span {
+    color: var(--green);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.7rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #0d1012;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--purple)
+        );
+    box-shadow:
+        0 0 1rem rgba(98, 230, 167, 0.35);
+}
