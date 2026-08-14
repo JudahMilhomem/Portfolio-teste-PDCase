@@ -140,6 +140,10 @@ figcaption {
     display: flex;
 }
 
+.main-container {
+    align-items: flex-start;
+}
+
 /* --- TEXTO --- */
 h1 {
     font-size: 1.6rem;
@@ -171,6 +175,7 @@ a:hover {
     flex-shrink: 0;
     position: sticky;
     top: 3rem;
+    align-self: flex-start;
 }
 
 .side-menu {
@@ -206,11 +211,11 @@ a:hover {
 }
 
 #main-info-section {
-    background-color: white;
     width: 70%;
 
     flex-direction: column;
     gap: 2rem;
+    flex: 1;
 }
 
 .info-card::before {
